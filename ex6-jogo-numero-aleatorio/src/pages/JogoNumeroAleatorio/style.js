@@ -5,14 +5,12 @@ const styles = StyleSheet.create({
     margin: 20
   },
   textoResultado: {
-    fontSize: 28,
+    fontSize: 32,
     fontWeight: 'bold',
     textAlign: 'center',
+    color: 'green',
     paddingBottom: 5,
-    marginTop: 16,
-    borderBottomWidth: 2,
-    borderBottomColor: 'red',
-    color: 'red'
+    marginTop: 16
   }
 });
 

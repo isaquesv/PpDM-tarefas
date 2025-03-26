@@ -11,8 +11,8 @@ const styles = StyleSheet.create({
     marginBottom: 15
   },
   imagem: {
-    width: 220,
-    height: 140,
+    width: 340,
+    height: 200,
     margin: 'auto',
     marginBottom: 20
   },
@@ -39,9 +39,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    paddingBottom: 5,
-    borderBottomWidth: 2,
-    borderBottomColor: 'red',
     color: 'red'
   }
 });

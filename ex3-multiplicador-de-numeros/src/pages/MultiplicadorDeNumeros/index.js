@@ -5,7 +5,7 @@ import { styles } from './style'
 function MultiplicadorDeNumeros() {
   const [n1, setN1] = useState(0)
   const [n2, setN2] = useState(0)
-  const [resultadoMultiplicacao, setResultadoMultiplicacao] = useState("___")
+  const [resultadoMultiplicacao, setResultadoMultiplicacao] = useState(0)
 
   function calcularMultiplicacao() {
     if (n1 == "" || n2 == "") {

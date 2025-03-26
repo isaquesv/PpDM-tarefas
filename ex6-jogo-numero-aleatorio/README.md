@@ -1,11 +1,21 @@
-# Sample Snack app
+# Jogo de Adivinhação - Número Aleatório de 0 a 10
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Neste exercício, criamos um jogo de adivinhação, onde o objetivo é tentar adivinhar um número aleatório gerado entre 0 e 10.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+**Dica:** Para gerar um número aleatório de 0 a 10, você pode usar o função: ***Math.floor(Math.random() * 11)***.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+![Imagem de referência da número aleatório](base-exercicio-6.png)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+O código foi organizado em:
+- ***1 Página "Jogo Número Aleatório"***.
+- ***Título***.
+- ***Botão*** - sorteia um número de 0 a 10.
+- ***Resultado*** - exibe o número sorteado.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Deploy
+Veja o projeto em ação clicando no seguinte link:
+[Deploy](https://snack.expo.dev/@isaquesv/ex6-jogo-numero-aleatorio)
+
+## Outros Exercícios
+- Quer explorar todos os projetos que desenvolvi até agora?
+[Clique aqui para acessar a lista completa!](https://github.com/isaquesv/PpDM_Tarefas)

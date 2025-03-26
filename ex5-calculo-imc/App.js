@@ -1,4 +1,4 @@
-import { View } from 'react-native'
+import { View, Text } from 'react-native'
 import CalculadoraDeIMC from './src/pages/CalculadoraDeIMC'
 
 function App() {

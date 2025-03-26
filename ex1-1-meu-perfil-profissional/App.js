@@ -1,46 +1,21 @@
 import { View, Text, Image } from 'react-native';
 
- // Mude aqui o nome da sua imagem
-import myImage from './assets/images/eu.jpg';
+import Componente1 from './src/Componente1/index'
+import Componente2 from './src/Componente2/index'
+import Componente3 from './src/Componente3/index'
+import Componente4 from './src/Componente4/index'
+import Componente5 from './src/Componente5/index'
+import Componente6 from './src/Componente6/index'
 
 function MeuPerfilProfissional(){
-    let nome = 'Isaque Silva Venancio';
-    let dataNascimento = '05/03/2005';
-    let idade = 19;
-    let formacaoAnterior = 'Técnico: Informática para Internet';
-    let formacaoAtual = 'Cursando ensino superior';
-    let experiencia = 'Projetos pessoais';
-    let projetos = 'github.com/isaquesv';
-
   return(
-     <View>
-        <Text style={{textAlign: 'center', fontSize: 18, fontWeight: 600}}>Meu Perfil App:</Text>
-        <Image source={myImage} style={{width: 200, height: 200, marginTop: 10, marginLeft: 60, marginRight: 60, marginBottom: 20}} />
-
-        <View style={{marginLeft: 20}}>
-          <Text style={{fontSize: 18, fontWeight: 600}}>Dados pessoais:</Text>
-          <Text>Nome: {nome}</Text>
-          <Text>Data de nascimento: {dataNascimento}</Text>
-          <Text>Idade: {idade}</Text>
-        </View>
-
-        <View style={{marginLeft: 20}}>
-          <Text style={{fontSize: 18, marginTop: 15, fontWeight: 600}}>Formação:</Text>
-          <Text>- {formacaoAnterior}</Text>
-          <Text>- {formacaoAtual}</Text>
-        </View>
-        
-        <View style={{marginLeft: 20}}>
-          <Text style={{fontSize: 18, marginTop: 15,fontWeight: 600}}>Experiência:</Text>
-          <Text>- {experiencia}</Text>
-        </View>
-        
-        <View style={{marginLeft: 20}}>
-          <Text style={{fontSize: 18, marginTop: 15,fontWeight: 600}}>Projetos:</Text>
-          <Text>- {projetos}</Text>
-        </View>
-
-
+     <View style={{margin: 'auto'}}>
+        <Componente1/>
+        <Componente2/>
+        <Componente3/>
+        <Componente4/>
+        <Componente5/>
+        <Componente6/>
       </View>
   )
 }

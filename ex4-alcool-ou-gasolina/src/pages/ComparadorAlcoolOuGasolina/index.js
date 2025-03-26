@@ -6,7 +6,7 @@ function ComparadorAlcoolOuGasolina() {
   const imagem = 'https://www.terra.com.br/economia/infograficos/alcool-x-gasolina/img/gasolina.gif';
   const [precoAlcool, setPrecoAlcool] = useState(0)
   const [precoGasolina, setPrecoGasolina] = useState(0)
-  const [resultadoCalculoVantagem, setResultadoCalculoVantagem] = useState("Resultado")
+  const [resultadoCalculoVantagem, setResultadoCalculoVantagem] = useState()
 
   function calcularVantagem() {
     if (precoAlcool == "" || precoGasolina == "") {

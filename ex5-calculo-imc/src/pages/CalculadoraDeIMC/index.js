@@ -8,7 +8,7 @@ import Campo  from './../../components/Campo'
 import Botao  from './../../components/Botao'
 
 function CalculadoraDeIMC() {
-  const [resultadoImc, setResultadoImc] = useState('Classificação')
+  const [resultadoImc, setResultadoImc] = useState()
   const [peso, setPeso] = useState(0)
   const [altura, setAltura] = useState()
 

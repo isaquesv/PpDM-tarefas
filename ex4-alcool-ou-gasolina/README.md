@@ -1,11 +1,24 @@
-# Sample Snack app
+# Álcool ou Gasolina?
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Neste exercício, desenvolvemos um comparador de escolha entre álcool e gasolina.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+Enunciado: O cálculo básico para se descobrir se o álcool é vantajoso ou não em relação à gasolina é simples. Basta dividir o preço do litro do etanol pelo da gasolina. Se o resultado for inferior a 0,7, o derivado da cana-de-açúcar é o melhor para abastecer. Se for maior que 0,7, então a gasolina é melhor.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+![Imagem de referência do comparador de escolha entre álcool e gasolina](base-exercicio-4.png)
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+O código foi organizado em uma única página que contém:
+- ***Título***.
+- ***Imagem***.
+- ***Entradas*** - campos para digitar os preços do álcool e da gasolina.
+- ***Botão*** - executa a comparação.
+- ***Resultado*** - exibe a melhor escolha.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Deploy
+Veja o projeto em ação clicando no seguinte link:
+[Deploy](https://snack.expo.dev/@isaquesv/ex4-alcool-ou-gasolina)
+
+## Outros Exercícios
+- Gostou deste projeto? Que tal conferir uma calculadora IMC?
+[Clique aqui e saiba mais!](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex5-calculo-imc)
+- Quer explorar todos os projetos que desenvolvi até agora?
+[Clique aqui para acessar a lista completa!](https://github.com/isaquesv/PpDM_Tarefas)

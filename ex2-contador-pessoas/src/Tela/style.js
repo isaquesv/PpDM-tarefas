@@ -1,13 +1,13 @@
 import { StyleSheet } from 'react-native';
 
-const styles = ({
-  TelaContador: {
+const styles = StyleSheet.create({
+  tela: {
     paddingLeft: 20,
     paddingRight: 20,
-    borderWidth: 2,
-    marginBottom: 10
+    marginBottom: 20
   },
-  Contador: {
+  contador: {
+    textAlign: 'center',
     fontSize: 90,
     fontWeight: 'bold'
   }

@@ -1,14 +1,14 @@
 import { View, Text } from 'react-native';
 import { styles } from './style'
 
-function TituloPrincipal() {
+function Titulo() {
   return (
     <View>
-      <Text style={styles.tituloPrincipal}>
+      <Text style={styles.titulo}>
         Contador de Pessoas
       </Text>
     </View>
   )
 }
 
-export default TituloPrincipal;
+export default Titulo;

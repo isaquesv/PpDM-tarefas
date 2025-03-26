@@ -1,11 +1,19 @@
-# Sample Snack app
+# Meu Perfil Profissional v2
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Nesta versão, refatorei o exercício [Meu Perfil Profissional](), aprimorando sua estrutura e organização.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+![Imagem de referência do perfil profissional](base-exercicio-1.png)
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+O código foi organizado em 3 componentes: ***TítuloPrincipal***, ***Imagem*** e ***Texto***.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+ANesta versão, aplicamos o conceito de props, reutilizando o componente ***Texto*** em quatro seções: ***Dados Pessoais***, ***Formação***, ***Experiência*** e ***Projetos***.
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Deploy
+Veja o projeto em ação clicando no seguinte link:
+[Deploy](https://snack.expo.dev/@isaquesv/ex1-2-meu-perfil-profissional-2)
+
+## Outros Exercícios
+- Gostou deste projeto? Que tal conferir um contador de pessoas?
+[Clique aqui e saiba mais!](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex2-contador-pessoas)
+- Quer explorar todos os projetos que desenvolvi até agora?
+[Clique aqui para acessar a lista completa!](https://github.com/isaquesv/PpDM_Tarefas)

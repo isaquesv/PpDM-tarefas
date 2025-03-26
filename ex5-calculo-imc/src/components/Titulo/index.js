@@ -1,6 +1,6 @@
 import { View, Text } from 'react-native'
 
-import { styles } from './style'
+import {styles} from './style'
 
 function Titulo(){
   return(

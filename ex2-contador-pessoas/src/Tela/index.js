@@ -1,16 +1,16 @@
 import { View, Text } from 'react-native';
 import { styles } from './style';
 
-function TelaContador(props) {
+function Tela(props) {
   let contador = props.contador;
 
   return (
-    <View style={styles.TelaContador}>
-      <Text style={styles.Contador}>
+    <View style={styles.tela}>
+      <Text style={styles.contador}>
         {contador}
       </Text>
     </View>
   )
 }
 
-export default TelaContador;
+export default Tela;

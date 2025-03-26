@@ -10,8 +10,6 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     paddingBottom: 5,
     marginTop: 16,
-    borderBottomWidth: 2,
-    borderBottomColor: 'red',
     color: 'red'
   }
 });

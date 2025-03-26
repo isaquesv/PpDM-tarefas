@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, Button } from 'react-native';
 
-import TelaContador from '../TelaContador/index';
+import Tela from '../Tela/index';
 
-function BotoesContador() {
+function Botoes() {
   const [contador, setContador] = useState(0);
 
   function aumentarContador() {
@@ -18,11 +18,11 @@ function BotoesContador() {
 
   return (
     <View>
-      <TelaContador contador={contador} />
+      <Tela contador={contador} />
       <Button title="+" color="green" onPress={aumentarContador} />
       <Button title="-" color="red" onPress={diminuirContador} />
     </View>
   );
 }
 
-export default BotoesContador;
+export default Botoes;

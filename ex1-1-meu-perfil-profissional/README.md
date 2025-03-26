@@ -1,11 +1,17 @@
-# Sample Snack app
+# Meu Perfil Profissional
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by scanning the **QR code** or use the iOS or Android emulators. When you're done, click **Save** and share the link!
+Este é o primeiro de muitos exercícios da disciplina, onde desenvolvemos um exemplo simples de perfil profissional.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Download** your project and use it with [expo cli](https://docs.expo.dev/get-started/installation/#expo-cli)).
+![Imagem de referência do perfil profissional](base-exercicio-1.png)
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the `<>` button.
+O código foi organizado em 6 componentes: ***Título***, ***Imagem***, ***Seção de Dados Pessoais***, ***Seção de Formação***, ***Seção de Experiência*** e ***Seção de Projetos***.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.dev/c/expo-dev-tools/61) or [Discord](https://chat.expo.dev/).
+## Deploy
+Veja o projeto em ação clicando no seguinte link:
+[Deploy](https://snack.expo.dev/@isaquesv/ex1-1-meu-perfil-profissional)
 
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack).
+## Outros Exercícios
+- Gostou deste projeto? Que tal conferir uma versão mais organizada?
+[Clique aqui para ver a melhoria!](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex1-2-meu-perfil-profissional-2)
+- Quer explorar todos os projetos que desenvolvi até agora?
+[Clique aqui para acessar a lista completa!](https://github.com/isaquesv/PpDM_Tarefas)

@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  tituloPrincipal: {
+  titulo: {
     fontSize: 25,
     fontWeight: 'bold',
     color: 'red',

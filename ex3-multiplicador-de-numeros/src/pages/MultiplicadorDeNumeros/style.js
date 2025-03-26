@@ -8,8 +8,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: 'orange',
-    marginBottom: 40
+    marginBottom: 20
   },
   campoDeTexto: {
     padding: 10,

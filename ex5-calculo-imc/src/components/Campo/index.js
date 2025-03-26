@@ -1,6 +1,6 @@
 import { View, TextInput } from 'react-native'
 
-import { styles } from './style'
+import {styles} from './style'
 
 function Campo(props){
   return(

@@ -7,7 +7,7 @@ import Imagem  from './../../components/Imagem'
 import Botao  from './../../components/Botao'
 
 function JogoNumeroAleatorio() {
-  const [numeroAleatorio, setnumeroAleatorio] = useState(0)
+  const [numeroAleatorio, setnumeroAleatorio] = useState()
 
   function gerarNumeroAleatorio(){
      setnumeroAleatorio(Math.floor(Math.random() * 11))
@@ -21,7 +21,7 @@ function JogoNumeroAleatorio() {
         funcao = {gerarNumeroAleatorio}
       />
       
-      <Text style={{color: 'red', marginLeft: 'auto', marginRight: 'auto', fontSize: 18}}>Pense em um nº de 0 a 10</Text>
+      <Text style={{color: 'green', marginLeft: 'auto', marginRight: 'auto', fontSize: 18}}>Pense em um nº de 0 a 10!</Text>
 
       <Text style={styles.textoResultado}>{numeroAleatorio}</Text>
     </View>
