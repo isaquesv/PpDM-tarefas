@@ -1,6 +1,6 @@
 # Meu Perfil Profissional v2
 
-Nesta versão, refatorei o exercício [Meu Perfil Profissional](), aprimorando sua estrutura e organização.
+Nesta versão, refatorei o exercício [Meu Perfil Profissional](https://github.com/isaquesv/PpDM_Tarefas/edit/master/ex1-1-meu-perfil-profissional/), aprimorando sua estrutura e organização.
 
 ![Imagem de referência do perfil profissional](base-exercicio-1.png)
 
