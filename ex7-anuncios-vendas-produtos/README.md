@@ -1,4 +1,4 @@
-# Anúncios para Vendas de Produtos (com Scroll View)
+# App 07: Anúncios para venda de produtos (com Scroll View)
 
 Neste exercício, criamos uma página de anúncios para venda de produtos com Scroll View horizontal.
 

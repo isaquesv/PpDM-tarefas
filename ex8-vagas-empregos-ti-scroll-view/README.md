@@ -1,4 +1,4 @@
-# Vagas de Emprego de TI (com Scroll View)
+# App 08: Vagas de emprego de TI (com Scroll View)
 
 Neste exercício, criamos uma página de vagas de emprego de TI com Scroll View vertical.
 

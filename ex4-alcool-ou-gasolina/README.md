@@ -1,4 +1,4 @@
-# Álcool ou Gasolina?
+# App 04: Álcool ou Gasolina
 
 Neste exercício, desenvolvemos um comparador de escolha entre álcool e gasolina.
 

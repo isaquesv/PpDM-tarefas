@@ -7,17 +7,17 @@ Repositório para armazenar os exercícios da disciplina ***Programação para D
 
 Lista de exercícios desenvolvidos ao longo da disciplina:
 
- - [Meu Perfil Profissional](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex1-1-meu-perfil-profissional)
- - [Meu Perfil Profissional v2](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex1-2-meu-perfil-profissional-2)
- - [Contador de Pessoas](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex2-contador-pessoas)
- - [Multiplicador de Números](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex3-multiplicador-de-numeros)
- - [Álcool ou Gasolina?](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex4-alcool-ou-gasolina)
- - [Calculadora IMC](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex5-calculo-imc)
- - [Jogo de Adivinhação - Número Aleatório de 0 a 10](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex6-jogo-numero-aleatorio)
- - [Anúncios para Vendas de Produtos (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex7-anuncios-vendas-produtos)
- - [Vagas de Emprego de TI (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex8-vagas-empregos-ti-scroll-view)
- - [Vagas de Emprego de TI (com Flat List)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex9-vagas-empregos-ti-flat-list)
- - [Formulário de Abertura de Conta Bancária](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex10-formulario-abertura-conta-bancaria)
+ - [App 01: Meu Perfil Profissional](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex1-1-meu-perfil-profissional)
+ - [App 01: Meu Perfil Profissional v2 (com componentes)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex1-2-meu-perfil-profissional-2)
+ - [App 02: Contador de Pessoas presentes na Loja](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex2-contador-pessoas)
+ - [App 03: Multiplicação de 2 números](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex3-multiplicador-de-numeros)
+ - [App 04: Álcool ou Gasolina](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex4-alcool-ou-gasolina)
+ - [App 05: Cálculo do IMC](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex5-calculo-imc)
+ - [App 06: Jogo do número aleatório](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex6-jogo-numero-aleatorio)
+ - [App 07: Anúncios para venda de produtos (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex7-anuncios-vendas-produtos)
+ - [App 08: Vagas de emprego de TI (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex8-vagas-empregos-ti-scroll-view)
+ - [App 09: Vagas de emprego de TI (com Flat List)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex9-vagas-empregos-ti-flat-list)
+ - [App 10: Formulário de abertura de conta bancária](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex10-formulario-abertura-conta-bancaria)
 
 ## Autores
 

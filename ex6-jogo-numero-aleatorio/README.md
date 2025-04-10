@@ -1,4 +1,4 @@
-# Jogo de Adivinhação - Número Aleatório de 0 a 10
+# App 06: Jogo do número aleatório
 
 Neste exercício, criamos um jogo de adivinhação, onde o objetivo é tentar adivinhar um número aleatório gerado entre 0 e 10.
 

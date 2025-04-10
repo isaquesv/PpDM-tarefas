@@ -1,4 +1,4 @@
-# Contador de Pessoas
+# App 02: Contador de Pessoas presentes na Loja
 
 Neste exercício, desenvolvemos um contador de pessoas para praticar componentes e eventos.
 

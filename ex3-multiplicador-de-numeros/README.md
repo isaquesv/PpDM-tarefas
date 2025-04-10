@@ -1,4 +1,4 @@
-# Multiplicador de Números
+# App 03: Multiplicação de 2 números
 
 Neste exercício, criamos um multiplicador de números para praticar a captura de entrada do usuário e eventos.
 

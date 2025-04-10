@@ -1,4 +1,4 @@
-# Calculadora IMC
+# App 05: Cálculo do IMC
 
 Neste exercício, desenvolvemos uma calculadora de IMC, aplicando a fórmula básica para determinar a classificação do peso de uma pessoa.
 
