@@ -15,8 +15,8 @@ function Noticia(props){
       <Imagem uri={urlImagem} />
       <Text style={styles.bairro}>Bairro: {bairro}</Text>
       <Text style={styles.data}>Postado há {data}</Text>
-      <Text style={{margin: 10, marginTop: 0, marginBottom: 20}}>
-        Autor: <Text style={styles.autor}>{autor}</Text>
+      <Text style={styles.autor}>
+        Autor: <Text style={styles.link}>{autor}</Text>
       </Text>
     </View>
   );

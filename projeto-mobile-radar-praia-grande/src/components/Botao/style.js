@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
       borderRadius: 4,
       marginTop: 20,
       marginBottom: 10,
-      marginHorizontal: 10,
+      marginHorizontal: 20,
       backgroundColor: 'green'
     },
     textoBotao: {

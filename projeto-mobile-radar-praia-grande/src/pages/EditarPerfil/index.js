@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { View, ScrollView, Text } from 'react-native';
 import { styles } from './style';
 
-import Navbar from '../../components/Navbar';
 import Imagem from '../../components/Imagem';
 import Campo from '../../components/Campo';
+import Range from '../../components/Range';
 import Botao from '../../components/Botao';
 
 function EditarPerfil() {
   const [nome, setNome] = useState('Caio Lima');
   const [email, setEmail] = useState('caio_lima95@hotmail.com');
   const [biografia, setBiografia] = useState('Se a vida não faz sentido, pelo menos que renda uma boa história pra contar.');
+  const [idade, setIdade] = useState(29);
   
   function atualizarPerfil() {
     alert("Perfil atualizado com sucesso!");
-    alert("Título: " + nome);
-    alert("E-mail: " + email);
-    alert("Biografia: " + biografia);
   }
 
   return (
@@ -43,6 +41,13 @@ function EditarPerfil() {
           value={biografia}
           onChangeText={setBiografia}
           placeholder="Conte um pouco sobre você" />
+
+        <Text style={styles.label}>Idade:</Text>
+        <Range
+          valorMinimo={0}
+          valorMaximo={110}
+          valor={idade}
+          onChange={setIdade} />
 
         <Botao
           texto="Atualizar informações"

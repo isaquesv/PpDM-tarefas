@@ -1,27 +1,32 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { styles } from './style';
 
 function Navbar({ navegar }) {
+  const menuItems = [
+    { key: 'Noticias', label: 'Notícias' },
+    { key: 'Login', label: 'Login' },
+    { key: 'Cadastrar', label: 'Cadastrar-se' },
+    { key: 'EditarPerfil', label: 'Perfil' },
+    { key: 'SobreNos', label: 'Sobre nós' },
+    { key: 'EditarNoticia', label: 'Editar notícia' },
+  ];
+
   return (
     <View style={styles.navbar}>
       <Text style={styles.titulo}>Radar Praia Grande</Text>
-        <View style={styles.menu}>
-          <TouchableOpacity onPress={() => navegar('Noticias')}>
-            <Text style={styles.menuItem}>Notícias</Text>
+
+      <FlatList
+        data={menuItems}
+        keyExtractor={(item) => item.key}
+        horizontal={true}
+        showsHorizontalScrollIndicator={true}
+        contentContainerStyle={styles.menu}
+        renderItem={({ item }) => (
+          <TouchableOpacity onPress={() => navegar(item.key)} style={styles.menuItemWrapper}>
+            <Text style={styles.menuItem}>{item.label}</Text>
           </TouchableOpacity>
-          <TouchableOpacity onPress={() => navegar('Login')}>
-            <Text style={styles.menuItem}>Login</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navegar('Cadastrar')}>
-            <Text style={styles.menuItem}>Cadastrar-se</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navegar('EditarPerfil')}>
-            <Text style={styles.menuItem}>Editar</Text>
-          </TouchableOpacity>
-          <TouchableOpacity onPress={() => navegar('SobreNos')}>
-            <Text style={styles.menuItem}>Sobre nós</Text>
-          </TouchableOpacity>
-        </View>
+        )}
+      />
     </View>
   );
 }

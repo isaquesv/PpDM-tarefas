@@ -1,13 +1,13 @@
+import { useState } from 'react';
 import { View } from 'react-native'
-import React, { useState } from 'react';
+import Navbar from './src/components/Navbar'
 import Noticias from './src/pages/Noticias'
 import CadastrarNoticia from './src/pages/CadastrarNoticia'
-import EditarPerfil from './src/pages/EditarPerfil'
-import SobreNos from './src/pages/SobreNos'
 import Login from './src/pages/Login'
 import Cadastrar from './src/pages/Cadastrar'
-import Navbar from './src/components/Navbar'
-
+import EditarPerfil from './src/pages/EditarPerfil'
+import SobreNos from './src/pages/SobreNos'
+import EditarNoticia from './src/pages/EditarNoticia'
 
 function App() {
   const [paginaAtual, setPaginaAtual] = useState('Noticias');
@@ -26,6 +26,8 @@ function App() {
         return <EditarPerfil />;
       case 'SobreNos':
         return <SobreNos />;
+      case 'EditarNoticia':
+        return <EditarNoticia />;
       default:
         return <Noticias />;
     }

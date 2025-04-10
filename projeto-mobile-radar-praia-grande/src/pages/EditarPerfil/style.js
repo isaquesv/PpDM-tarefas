@@ -2,19 +2,20 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-      height: 600
+      height: 450,
     },
     titulo: {
-      fontSize: 20,
+      fontSize: 24,
       textAlign: 'center',
       fontWeight: 'bold',
       marginHorizontal: 10,
-      marginVertical: 16
+      marginVertical: 16,
     },
     label: {
       fontWeight: 'bold',
-      margin: 10,
-      marginBottom: 8
+      marginTop: 10,
+      marginHorizontal: 20,
+      marginBottom: 8,
     }
 });
 

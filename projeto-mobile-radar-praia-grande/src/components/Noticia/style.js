@@ -2,29 +2,38 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     noticia: {
-      margin: 10,
+      marginVertical: 10,
+      marginLeft: 20,
+      marginRight: 7,
       marginTop: 20,
       borderWidth: 1,
+      borderColor: '#aaa',
       borderRadius: 6,
-      backgroundColor: 'white'
+      backgroundColor: 'white',
     },
     titulo: {
       fontSize: 16,
       fontStyle: 'italic',
       fontWeight: 'bold',
       textAlign: 'center',
-      padding: 15
+      paddingVertical: 15,
+      paddingHorizontal: 20,
     },
     bairro: {
-      marginHorizontal: 10
+      marginHorizontal: 20,
     },
     data: {
-      margin: 10
+      marginVertical: 10,
+      marginHorizontal: 20,
     },
     autor: {
+      marginHorizontal: 20,
+      marginBottom: 20,
+    },
+    link: {
       color: '#007AFF',
       textDecorationLine: 'underline',
-      fontStyle: 'italic'
+      fontStyle: 'italic',
     }
 });
 

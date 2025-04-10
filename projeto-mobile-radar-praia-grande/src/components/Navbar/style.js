@@ -5,9 +5,10 @@ const styles = StyleSheet.create({
     padding: 12,
     borderBottomWidth: 1,
     backgroundColor: 'white',
-    alignItems: 'center',
   },
   titulo: {
+    textAlign: 'center',
+    paddingBottom: 10,
     fontSize: 20,
     fontWeight: 'bold',
     borderBottomWidth: 1,
@@ -15,16 +16,15 @@ const styles = StyleSheet.create({
   menu: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    width: '100%',
+    marginTop: 10,
     marginBottom: 2,
-    paddingVertical: 8, // espaço acima/abaixo do texto
-    paddingHorizontal: 10, // espaço dos lados
+    paddingVertical: 8,
+    paddingHorizontal: 10,
 
   },
   menuItem: {
     fontSize: 16,
     marginHorizontal: 10,
-    color: 'black', // pode mudar a cor conforme sua preferência
     },
   });
 

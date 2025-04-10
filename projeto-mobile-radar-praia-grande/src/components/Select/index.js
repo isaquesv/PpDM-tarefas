@@ -3,7 +3,7 @@ import { View } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import { styles } from './style';
 
-function Select({ opcao1, opcao2, opcao3, opcao4, onChange }) {
+function Select({ opcao1, opcao2, opcao3, opcao4, selectedValue, onChange }) {
   const [selected, setSelected] = useState(opcao1);
 
   const handleChange = (itemValue) => {
@@ -15,7 +15,7 @@ function Select({ opcao1, opcao2, opcao3, opcao4, onChange }) {
     <View>
       <Picker
         style={styles.select}
-        selectedValue={selected}
+        selectedValue={selectedValue}
         onValueChange={handleChange} >
         <Picker.Item key={1} value={opcao1} label={opcao1} />
         <Picker.Item key={2} value={opcao2} label={opcao2} />

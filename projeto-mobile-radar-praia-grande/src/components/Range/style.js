@@ -2,13 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-      height: 450,
-    },
-    label: {
-      fontWeight: 'bold',
-      marginTop: 18,
+      marginBottom: 12,
       marginHorizontal: 20,
-      marginBottom: 8,
+    },
+    text: {
+      textAlign: 'center',
+      marginTop: 6,
     }
 });
 
