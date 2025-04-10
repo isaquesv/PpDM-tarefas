@@ -4,11 +4,11 @@ import { styles } from './style';
 import Navbar  from '../../components/Navbar';
 import Select from '../../components/Select';
 import Noticia from '../../components/Noticia';
+import Botao from '../../components/Botao';
 
-function Noticias() {
+function Noticias({navegar}) {
   return (
     <View style={styles.container}>
-      <Navbar />
       <ScrollView>
         <Text style={styles.label}>Filtros de pesquisa:</Text>
         <Select
@@ -43,7 +43,11 @@ function Noticias() {
           data={"23 horas"}
           autor={"Letícia Martins"}
         />
+
+        <Botao texto="Cadastrar Notícia" funcao={() => navegar('CadastrarNoticia')} />
       </ScrollView>
+
+
     </View>
   )
 }

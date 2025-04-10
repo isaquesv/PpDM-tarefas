@@ -21,7 +21,6 @@ function EditarPerfil() {
 
   return (
     <View style={styles.container}>
-      <Navbar />
       <ScrollView>
         <Text style={styles.titulo}>Editar perfil</Text>
         <Imagem

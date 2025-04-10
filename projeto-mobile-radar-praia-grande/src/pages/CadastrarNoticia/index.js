@@ -24,7 +24,6 @@ function CadastrarNoticia() {
 
   return (
     <View style={styles.container}>
-      <Navbar />
       <ScrollView>
         <Text style={styles.titulo}>Cadastrar notícia</Text>
 
