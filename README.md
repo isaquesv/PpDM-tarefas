@@ -14,7 +14,13 @@ Lista de exercícios desenvolvidos ao longo da disciplina:
  - [Álcool ou Gasolina?](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex4-alcool-ou-gasolina)
  - [Calculadora IMC](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex5-calculo-imc)
  - [Jogo de Adivinhação - Número Aleatório de 0 a 10](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex6-jogo-numero-aleatorio)
+ - [Anúncios para Vendas de Produtos (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex7-anuncios-vendas-produtos)
+ - [Vagas de Emprego de TI (com Scroll View)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex8-vagas-empregos-ti-scroll-view)
+ - [Vagas de Emprego de TI (com Flat List)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex9-vagas-empregos-ti-flat-list)
+ - [Formulário de Abertura de Conta Bancária](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex10-formulario-abertura-conta-bancaria)
 
-## Autor
+## Autores
 
 - [@isaquesv](https://www.github.com/isaquesv)
+- [@luiza-carla](https://www.github.com/luiza-carla)
+- [@ruann-fernandess](https://www.github.com/ruann-fernandess)

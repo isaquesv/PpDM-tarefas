@@ -17,5 +17,7 @@ Veja o projeto em ação clicando no seguinte link:
 [Deploy](https://snack.expo.dev/@isaquesv/ex6-jogo-numero-aleatorio)
 
 ## Outros Exercícios
+- Gostou deste projeto? Que tal conferir uma página de anúncios para vendas de produtos?
+[Clique aqui e saiba mais!](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex7-anuncios-vendas-produtos)
 - Quer explorar todos os projetos que desenvolvi até agora?
 [Clique aqui para acessar a lista completa!](https://github.com/isaquesv/PpDM_Tarefas)
