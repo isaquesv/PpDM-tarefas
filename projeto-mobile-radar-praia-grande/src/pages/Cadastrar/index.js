@@ -4,13 +4,15 @@ import { styles } from './style'
 
 import Campo from '../../components/Campo';
 import Range from '../../components/Range';
+import Toggle from '../../components/Toggle';
 import Botao from '../../components/Botao';
 
-function CadastrarNoticia() {
+function Cadastrar() {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [idade, setIdade] = useState(1);
+  const [escritor, setEscritor] = useState(false);
 
   const handleCadastro = () => {
     if (nome && email && senha) {
@@ -19,6 +21,7 @@ function CadastrarNoticia() {
       setEmail('');
       setSenha('');
       setIdade(1);
+      setEscritor(false);
     } else {
       alert('Preencha todos os campos.');
     }
@@ -54,6 +57,11 @@ function CadastrarNoticia() {
           valor={idade}
           onChange={setIdade} />
 
+        <Text style={styles.label}>Você é um escritor?</Text>
+        <Toggle
+          value={escritor}
+          onChange={setEscritor} />
+
         <Botao
           texto="Cadastrar"
           funcao={handleCadastro} />
@@ -62,4 +70,4 @@ function CadastrarNoticia() {
   );
 }
 
-export default CadastrarNoticia;
+export default Cadastrar;
