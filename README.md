@@ -19,6 +19,42 @@ Lista de exercícios desenvolvidos ao longo da disciplina:
  - [App 09: Vagas de emprego de TI (com Flat List)](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex9-vagas-empregos-ti-flat-list)
  - [App 10: Formulário de abertura de conta bancária](https://github.com/isaquesv/PpDM_Tarefas/tree/master/ex10-formulario-abertura-conta-bancaria)
 
+## Projeto Radar Praia Grande
+
+Este projeto é um app de notícias, simulando funcionalidades básicas de uma rede social de conteúdo jornalístico.
+
+Páginas:
+- Login: acesso de usuários já cadastrados.
+- Cadastrar-se: formulário de criação de novo usuário.
+- Página de Notícias: visualização de várias notícias em lista.
+- Perfil: dados do usuário com opções de visualização e ajustes.
+- Sobre Nós: informações da equipe de desenvolvimento.
+- Criar Notícia: tela para adicionar uma nova notícia ao app.
+- Editar Notícia: possibilidade de atualizar o conteúdo de uma notícia existente.
+
+Componentes:
+- Botao: componente utilizado para criação de botões.
+- Campo: componente utilizado para criação de campos (inputs).
+- Imagem: componente utilizado para inserção de imagens.
+- Navbar: componente utilizado para inserção da barra de navegação.
+- Noticia: componente utilizado para criação e inserção de notícias.
+- Range: componente utilizado para criação de um controle deslizante (slider).
+- Select: componente utilizado para criação de um menu de opções.
+
+Deploy:
+O projeto pode ser acessado e executado diretamente via Snack Expo.
+[**Abrir o projeto no Snack!**](https://snack.expo.dev/@isaquesv/projeto-mobile-radar-praia-grande)
+
+## Tecnologias e recursos utilizados
+- React Native na plataforma Snack Expo;
+
+- Componentes de UI utilizados:
+View, Text, Image, TextInput, Picker, Slider, Switch, ScrollView, FlatList, entre outros;
+
+- Gerenciamento de estado com o hook useState;
+
+- Passagem de dados entre componentes com props.
+
 ## Autores
 
 - [@isaquesv](https://www.github.com/isaquesv)
