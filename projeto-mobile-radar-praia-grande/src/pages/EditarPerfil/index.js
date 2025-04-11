@@ -5,6 +5,7 @@ import { styles } from './style';
 import Imagem from '../../components/Imagem';
 import Campo from '../../components/Campo';
 import Range from '../../components/Range';
+import Toggle from '../../components/Toggle';
 import Botao from '../../components/Botao';
 
 function EditarPerfil() {
@@ -12,6 +13,7 @@ function EditarPerfil() {
   const [email, setEmail] = useState('caio_lima95@hotmail.com');
   const [biografia, setBiografia] = useState('Se a vida não faz sentido, pelo menos que renda uma boa história pra contar.');
   const [idade, setIdade] = useState(29);
+  const [escritor, setEscritor] = useState(true);
   
   function atualizarPerfil() {
     alert("Perfil atualizado com sucesso!");
@@ -48,6 +50,11 @@ function EditarPerfil() {
           valorMaximo={110}
           valor={idade}
           onChange={setIdade} />
+
+        <Text style={styles.label}>Escritor:</Text>
+        <Toggle
+          value={escritor}
+          onChange={setEscritor} />
 
         <Botao
           texto="Atualizar informações"
