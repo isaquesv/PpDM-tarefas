@@ -40,6 +40,7 @@ Componentes:
 - Noticia: componente utilizado para criação e inserção de notícias.
 - Range: componente utilizado para criação de um controle deslizante (slider).
 - Select: componente utilizado para criação de um menu de opções.
+- Toggle: componente utilizada para indicar um estado (verdadeiro ou falso).
 
 Deploy:
 O projeto pode ser acessado e executado diretamente via Snack Expo.
