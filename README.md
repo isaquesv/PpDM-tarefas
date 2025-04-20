@@ -1,5 +1,5 @@
 
-# PpDM_Tarefas
+# PpDM-tarefas
 
 Repositório para armazenar os exercícios da disciplina ***Programação para Dispositivos Mobile***, cursada no 5º ciclo de *Análise e Desenvolvimento de Sistemas* na *Fatec de Praia Grande, 2025*. Conteúdos ministrados pelo professor [Joseffe Oliveira](https://www.linkedin.com/in/joseffe/).
 
