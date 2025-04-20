@@ -56,6 +56,10 @@ View, Text, Image, TextInput, Picker, Slider, Switch, ScrollView, FlatList, entr
 
 - Passagem de dados entre componentes com props.
 
+## Licença
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 ## Autores
 
 - [@isaquesv](https://www.github.com/isaquesv)
