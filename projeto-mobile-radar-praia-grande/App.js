@@ -1,46 +1,45 @@
-import { useState } from 'react';
-import { View } from 'react-native'
-import Navbar from './src/components/Navbar'
-import Noticias from './src/pages/Noticias'
-import CadastrarNoticia from './src/pages/CadastrarNoticia'
-import Login from './src/pages/Login'
-import Cadastrar from './src/pages/Cadastrar'
-import EditarPerfil from './src/pages/EditarPerfil'
-import SobreNos from './src/pages/SobreNos'
-import EditarNoticia from './src/pages/EditarNoticia'
+// App.js
+import React from 'react';
+import { View, SafeAreaView, StyleSheet } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-function App() {
-  const [paginaAtual, setPaginaAtual] = useState('Noticias');
+import Navbar from './src/components/Navbar';
 
-  const renderPagina = () => {
-    switch (paginaAtual) {
-      case 'Noticias':
-        return <Noticias navegar={setPaginaAtual}/>;
-      case 'Login':
-        return <Login />;
-      case 'Cadastrar':
-        return <Cadastrar />;
-      case 'CadastrarNoticia':
-        return <CadastrarNoticia />;
-      case 'EditarPerfil':
-        return <EditarPerfil />;
-      case 'SobreNos':
-        return <SobreNos />;
-      case 'EditarNoticia':
-        return <EditarNoticia />;
-      default:
-        return <Noticias />;
-    }
-  };
+import Noticias from './src/pages/Noticias';
+import CadastrarNoticia from './src/pages/CadastrarNoticia';
+import Login from './src/pages/Login';
+import Cadastrar from './src/pages/Cadastrar';
+import EditarPerfil from './src/pages/EditarPerfil';
+import SobreNos from './src/pages/SobreNos';
+import EditarNoticia from './src/pages/EditarNoticia';
 
+const Stack = createNativeStackNavigator();
+
+export default function App() {
   return (
-    <View style={{ flex: 1 }}>
-      <Navbar navegar={setPaginaAtual} />
-      {renderPagina()}
-    </View>
-
+    <NavigationContainer>
+      <SafeAreaView style={styles.container}>
+        <Navbar />
+        <View style={{ flex: 1 }}>
+          <Stack.Navigator screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Noticias" component={Noticias} />
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="Cadastrar" component={Cadastrar} />
+            <Stack.Screen name="CadastrarNoticia" component={CadastrarNoticia} />
+            <Stack.Screen name="EditarPerfil" component={EditarPerfil} />
+            <Stack.Screen name="SobreNos" component={SobreNos} />
+            <Stack.Screen name="EditarNoticia" component={EditarNoticia} />
+          </Stack.Navigator>
+        </View>
+      </SafeAreaView>
+    </NavigationContainer>
   );
 }
 
-export default App
- 
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+});

@@ -1,8 +1,10 @@
 import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-    container: {    
-      height: 450,
+    container: {
+      flex: 1,
+      padding: 20,
+      backgroundColor: '#fff'
     },
     titulo: {
       fontSize: 24,

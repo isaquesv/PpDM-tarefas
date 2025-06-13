@@ -1,69 +1,127 @@
-import { useState } from 'react';
-import { View, ScrollView, FlatList, Text } from 'react-native';
+import React, { useState, useEffect, useCallback } from 'react';
+import { View, FlatList, Text, ActivityIndicator } from 'react-native';
 import { styles } from './style';
-
+import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import Noticia from '../../components/Noticia';
 import Select from '../../components/Select';
 import Botao from '../../components/Botao';
+import Fundo from '../../components/Fundo';
+import { fetchNoticias } from '../../services/noticiasAPI'; // Função da API real
 
-const ContainerNoticias = ({ navegar }) => {
-  const initial_feed = [
-    {
-      id: '1',
-      titulo: 'Novo Parque Ecológico é Inaugurado no Bairro Quietude',
-      urlImagem: 'https://s2-g1.glbimg.com/C94RRLT8_rrh-ZSVkinoQpHQSYM=/0x0:1920x1080/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/8/L/GGkgQEStWyaQUewazang/frame-00-00-11.269.jpg',
-      bairro: 'Quietude',
-      data: '6 horas',
-      autor: 'Amanda Freitas',
-    },
-    {
-      id: '2',
-      titulo: 'Praia Grande Receberá Festival de Música na Orla do Canto do Forte',
-      urlImagem: 'https://cdn.ibahia.com/img/inline/300000/500x400/Festival-Canto-pela-Paz-reune-centenas-de-pessoas-0030968700202311252014-7.webp?fallback=https%3A%2F%2Fcdn.ibahia.com%2Fimg%2Finline%2F300000%2FFestival-Canto-pela-Paz-reune-centenas-de-pessoas-0030968700202311252014.jpg%3Fxid%3D1445907&xid=1445907',
-      bairro: 'Canto do Forte',
-      data: '8 horas',
-      autor: 'Caio Lima',
-    },
-    {
-      id: '3',
-      titulo: 'Feira de Artesanato Ganha Espaço Permanente no Bairro Boqueirão',
-      urlImagem: 'https://niteroi.rj.gov.br/wp-content/uploads/2021/12/Feira-da-Orla-de-Sao-Francisco-1-1.jpeg',
-      bairro: 'Boqueirão',
-      data: '23 horas',
-      autor: 'Letícia Martins',
-    },
-  ];
+const ContainerNoticias = () => {
+  const [feed, setFeed] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [erro, setErro] = useState(null);
+  const [filtroClassificacao, setFiltroClassificacao] = useState('Recentes');
+  const [filtroBairro, setFiltroBairro] = useState('');
+  const navigation = useNavigation();
 
-  const [feed, setFeed] = useState(initial_feed);
+  const carregarNoticias = async () => {
+    setLoading(true);
+    setErro(null);
+    try {
+      const dados = await fetchNoticias();
+      setFeed(dados);
+    } catch (e) {
+      setErro('Erro ao carregar notícias.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useFocusEffect(
+  useCallback(() => {
+    carregarNoticias();
+  }, [])
+);
+
+  const filtrarEOrdenarNoticias = () => {
+    let noticiasFiltradas = [...feed];
+
+    if (filtroBairro && filtroBairro !== 'Bairros') {
+      noticiasFiltradas = noticiasFiltradas.filter(
+        (noticia) => noticia.bairro === filtroBairro
+      );
+    }
+
+    switch (filtroClassificacao) {
+      case 'Recentes':
+        noticiasFiltradas.sort((a, b) => b.timestamp - a.timestamp);
+        break;
+      case 'Mais visualizados':
+        noticiasFiltradas.sort((a, b) => b.visualizacoes - a.visualizacoes);
+        break;
+      case 'Mais curtidos':
+        noticiasFiltradas.sort((a, b) => b.curtidas - a.curtidas);
+        break;
+      default:
+        break;
+    }
+
+    return noticiasFiltradas;
+  };
+
+  if (loading) {
+    return (
+      <Fundo>
+        <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
+          <ActivityIndicator size="large" color="#0000ff" />
+          <Text>Carregando notícias...</Text>
+        </View>
+      </Fundo>
+    );
+  }
+
+  if (erro) {
+    return (
+      <Fundo>
+        <View style={[styles.container, { justifyContent: 'center', alignItems: 'center' }]}>
+          <Text style={{ color: 'red', marginBottom: 10 }}>{erro}</Text>
+          <Botao texto="Tentar Novamente" funcao={carregarNoticias} />
+        </View>
+      </Fundo>
+    );
+  }
 
   return (
-    <View style={styles.container}>
-      <ScrollView>
-        <Text style={styles.label}>Filtros de pesquisa:</Text>
-        <Select
-          opcao1="Classificações"
-          opcao2="Recentes"
-          opcao3="Mais visualizados"
-          opcao4="Mais curtidos"
-          onChange={() => {}}
-        />
-        <Select
-          opcao1="Bairros"
-          opcao2="Boqueirão"
-          opcao3="Canto do Forte"
-          opcao4="Guilhermina"
-          onChange={() => {}}
-        />
-        
+    <Fundo>
+      <View style={styles.container}>
         <FlatList
-          data={feed}
-          keyExtractor={(item) => item.id}
+          data={filtrarEOrdenarNoticias()}
+          keyExtractor={(item) => item.id?.toString() || Math.random().toString()}
           renderItem={({ item }) => <Noticia {...item} />}
-        />
+          ListHeaderComponent={
+            <View style={styles.filtrosContainer}>
+              <Text style={styles.label}>Filtros de pesquisa:</Text>
 
-        <Botao texto="Cadastrar Notícia" funcao={() => navegar('CadastrarNoticia')} />
-      </ScrollView>
-    </View>
+              <Select
+                opcao1="Classificações"
+                opcao2="Recentes"
+                opcao3="Mais visualizados"
+                opcao4="Mais curtidos"
+                selectedValue={filtroClassificacao}
+                onChange={setFiltroClassificacao}
+              />
+
+              <Select
+                opcao1="Bairros"
+                opcao2="Boqueirão"
+                opcao3="Canto do Forte"
+                opcao4="Guilhermina"
+                selectedValue={filtroBairro}
+                onChange={setFiltroBairro}
+              />
+
+              <Botao
+                texto="Cadastrar Notícia"
+                funcao={() => navigation.navigate('CadastrarNoticia')}
+              />
+            </View>
+          }
+          contentContainerStyle={{ paddingBottom: 40 }}
+        />
+      </View>
+    </Fundo>
   );
 };
 

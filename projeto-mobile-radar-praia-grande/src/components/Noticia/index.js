@@ -1,6 +1,7 @@
 import { View, Text } from 'react-native';
 import { styles } from './style';
 import Imagem from './../Imagem';
+import Fundo from '../../components/Fundo';
 
 function Noticia(props){  
   let titulo = props.titulo;
